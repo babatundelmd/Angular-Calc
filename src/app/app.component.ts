@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-calc';
+
+
+  getAnswer () {
+
+  }
+
+  reset () {
+
+  }
+
+  delete () {
+
+  }
+
+  pressKey (val: any) {
+
+  }
 }

@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Backgrounds */
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-background-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  /* Keys */
+  --key-background: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-background-toggle: hsl(6, 63%, 50%);
+  --dark-red-key-shadow: hsl(6, 70%, 34%);
+  --light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  --grayish-orange-key-shadow: hsl(28, 16%, 65%);
+  /* Text */
+  --very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  overflow: auto;
+}
+
+body {
+  background: var(--main-background);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 520px;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  font-size: 18px;
+}
+.card-display {
+  display: flex;
+  height: 100px;
+  background: var(--screen-background);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.card-display .card-display-text {
+  align-self: center;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.card-keys-holder {
+  text-align: center;
+  background: var(--toggle-background-keypad-background);
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.keys {
+  width: 100px;
+  height: 65px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  margin: 7px;
+  cursor: pointer;
+  background: var(--light-grayish-orange-key-background);
+}
+
+.answer {
+  background: var(--key-background-toggle);
+  box-shadow: 0 0 2px 0 var(--dark-red-key-shadow),
+    0 0 10px 0 var(--dark-red-key-shadow);
+}
+
+button #answer {
+  color: var(--white) !important;
+}
+
+.specialKeybox {
+  width: 220px;
+  margin: 5px;
+  height: 62px;
+  color: var(--white);
+}
+
+.specialkey {
+  background: var(--key-background);
+  color: var(--white);
+  font-size: 25px;
+}
