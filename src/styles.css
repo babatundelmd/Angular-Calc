@@ -42,7 +42,18 @@ body {
 .card {
   width: 520px;
 }
+.theme {
+  display: inline-flex;
+}
+.theme p{
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: normal;
+}
 
+.theme span {
+  margin-top: 14px;
+}
 .card-heading {
   display: flex;
   justify-content: space-between;

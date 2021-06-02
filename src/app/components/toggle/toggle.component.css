@@ -1,0 +1,29 @@
+.switch-toggle {
+  float: left;
+  background: var(--toggle-background-keypad-background);
+  border-radius: 20px;
+  padding: 3px;
+}
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.switch-toggle input + label {
+  padding: 7px;
+  float: left;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.light:checked + label {
+  background: var(--key-background-toggle);
+}
+
+.dark:checked + label {
+  background: hsl(25, 98%, 40%);
+}
+
+.neon:checked + label {
+  background: hsl(176, 100%, 44%);
+}

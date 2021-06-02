@@ -1,0 +1,29 @@
+<div class="switch-toggle">
+  <input
+    id="on"
+    name="state-d"
+    type="radio"
+    checked="checked"
+    class="light"
+    (click)="onClick('light')"
+  />
+  <label for="on"></label>
+
+  <input
+    id="dark"
+    name="state-d"
+    type="radio"
+    class="dark"
+    (click)="onClick('dark')"
+  />
+  <label for="dark"></label>
+
+  <input
+    id="off"
+    name="state-d"
+    type="radio"
+    class="neon"
+    (click)="onClick('neon')"
+  />
+  <label for="off"></label>
+</div>

@@ -2,8 +2,12 @@
   <div class="card">
     <div class="card-heading">
       <p>Calc</p>
-
-      <p>Theme</p>
+      <div class="theme">
+        <p>THEME</p>
+        <span>
+          <toggle (clicked)="onToggle($event)"></toggle>
+        </span>
+      </div>
     </div>
 
     <div class="card-display">
