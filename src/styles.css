@@ -15,6 +15,7 @@
   --very-dark-grayish-blue: hsl(221, 14%, 31%);
   --white: #fff;
   --color-dark: #fff;
+  --very-dark-blue: #fff;
 }
 
 * {
@@ -89,6 +90,7 @@ body {
   border-radius: 10px;
   padding-top: 25px;
   padding-bottom: 25px;
+  width: 100%;
 }
 
 .keys {
@@ -111,8 +113,8 @@ body {
     0 0 10px 0 var(--dark-red-key-shadow);
 }
 
-button #answer {
-  color: var(--white) !important;
+#answer {
+  color: var(--very-dark-blue);
 }
 
 .specialKeybox {
@@ -126,4 +128,54 @@ button #answer {
   background: var(--key-background);
   color: var(--white);
   font-size: 25px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 12px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 12px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .keys {
+    width: 70px;
+    height: 60px;
+  }
+
+  .specialKeybox {
+    width: 155px;
+    margin: 5px;
+    height: 62px;
+  }
+
+  .specialkey {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 12px !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1028px) {
 }

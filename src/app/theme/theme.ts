@@ -21,6 +21,7 @@ export const light: Theme = {
     '--very-dark-grayish-blue': 'hsl(221, 14%, 31%)',
     '--white': '#fff',
     '--color-dark': '#fff',
+    '--very-dark-blue': '#fff',
   },
 };
 
@@ -42,6 +43,7 @@ export const dark: Theme = {
     '--very-dark-grayish-blue': 'hsl(60, 10%, 19%)',
     '--white': '#fff',
     '--color-dark': 'hsl(60, 10%, 19%)',
+    '--very-dark-blue': '#fff',
   },
 };
 
@@ -63,5 +65,6 @@ export const neon: Theme = {
     '--very-dark-grayish-blue': 'hsl(52, 100%, 62%)',
     '--white': '#fff',
     '--color-dark': 'hsl(52, 100%, 62%)',
+    '--very-dark-blue': 'hsl(198, 20%, 13%)',
   },
 };
