@@ -13,13 +13,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {}
 
-  getAnswer() {}
+  getAnswer() {
+    this.playSoundAnswer();
+  }
 
   reset() {}
 
   delete() {}
 
-  pressKey(val: any) {}
+  pressKey(val: any) {
+    this.playSound();
+  }
 
   onToggle(input: any) {
     if (input === 'light') {
@@ -31,5 +35,19 @@ export class AppComponent implements OnInit {
     if (input === 'neon') {
       this.theme.setNeonTheme();
     }
+  }
+
+  playSound() {
+    let audio = new Audio();
+    audio.src = 'assets/keypad/scifi.mp3';
+    audio.load();
+    audio.play();
+  }
+
+  playSoundAnswer() {
+    let audio = new Audio();
+    audio.src = 'assets/keypad/mech.mp3';
+    audio.load();
+    audio.play();
   }
 }

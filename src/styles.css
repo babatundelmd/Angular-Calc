@@ -93,6 +93,14 @@ body {
   width: 100%;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.9;
+  transform: translateY(4px);
+}
 .keys {
   width: 100px;
   height: 65px;
@@ -136,7 +144,6 @@ body {
     display: flex;
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 640px) {
