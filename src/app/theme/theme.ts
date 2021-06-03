@@ -20,6 +20,7 @@ export const light: Theme = {
     // Text
     '--very-dark-grayish-blue': 'hsl(221, 14%, 31%)',
     '--white': '#fff',
+    '--color-dark': '#fff',
   },
 };
 
@@ -35,11 +36,12 @@ export const dark: Theme = {
     '--key-shadow': 'hsl(185, 58%, 25%)',
     '--key-background-toggle': 'hsl(25, 98%, 40%)',
     '--dark-orange-key-shadow': 'hsl(25, 99%, 27%)',
-    '--light-grayish-yellow-key-background': 'hsl(45, 7%, 89%)',
-    '--dark-grayish-orange-key-shadow': 'hsl(35, 11%, 61%)',
+    '--light-grayish-orange-key-background': 'hsl(45, 7%, 89%)',
+    '--grayish-orange-key-shadow': 'hsl(35, 11%, 61%)',
     // Text
-    '--very-dark-grayish-yellow': 'hsl(60, 10%, 19%)',
+    '--very-dark-grayish-blue': 'hsl(60, 10%, 19%)',
     '--white': '#fff',
+    '--color-dark': 'hsl(60, 10%, 19%)',
   },
 };
 
@@ -55,11 +57,11 @@ export const neon: Theme = {
     '--key-shadow': 'hsl(285, 91%, 52%)',
     '--key-background-toggle': 'hsl(176, 100%, 44%)',
     '--soft-cyan-key-shadow': 'hsl(177, 92%, 70%)',
-    '--dark-violet-key-background': 'hsl(268, 47%, 21%)',
-    '--dark-magenta-key-shadow': 'hsl(290, 70%, 36%)',
+    '--light-grayish-orange-key-background': 'hsl(268, 47%, 21%)',
+    '--grayish-orange-key-shadow': 'hsl(290, 70%, 36%)',
     // Text
-    '--light-yellow': 'hsl(60, 10%, 19%)',
-    '--very-dark-blue': 'hsl(198, 20%, 13%)',
+    '--very-dark-grayish-blue': 'hsl(52, 100%, 62%)',
     '--white': '#fff',
+    '--color-dark': 'hsl(52, 100%, 62%)',
   },
 };

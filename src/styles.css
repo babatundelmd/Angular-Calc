@@ -14,6 +14,7 @@
   /* Text */
   --very-dark-grayish-blue: hsl(221, 14%, 31%);
   --white: #fff;
+  --color-dark: #fff;
 }
 
 * {
@@ -45,10 +46,12 @@ body {
 .theme {
   display: inline-flex;
 }
-.theme p{
+
+.theme p {
   margin-right: 15px;
   font-size: 15px;
   font-weight: normal;
+  color: var(--color-dark);
 }
 
 .theme span {
@@ -60,9 +63,13 @@ body {
   color: var(--white);
   font-size: 18px;
 }
+
+.card-heading p {
+  color: var(--color-dark);
+}
 .card-display {
   display: flex;
-  height: 100px;
+  height: 130px;
   background: var(--screen-background);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -73,7 +80,7 @@ body {
 .card-display .card-display-text {
   align-self: center;
   font-size: 40px;
-  color: var(--white);
+  color: var(--color-dark);
 }
 
 .card-keys-holder {
@@ -94,6 +101,8 @@ body {
   margin: 7px;
   cursor: pointer;
   background: var(--light-grayish-orange-key-background);
+  color: var(--very-dark-grayish-blue);
+  box-shadow: 0px 3px var(--grayish-orange-key-shadow);
 }
 
 .answer {
