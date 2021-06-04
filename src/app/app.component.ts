@@ -7,98 +7,23 @@ import { ThemeService } from './theme/theme.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  mainText: any = '';
-  subText = '';
-  operand1: any; // The first operand
-  operand2: any; // The second operand
-  operator = ''; // The operator
-  calculationString = '';
-  // This is the string that denotes the operation being performed
-  answered = false;
-  // A flag to check whether the solution has been processed
-  operatorSet = false; // You'll see how this is used soon
-
   input: any = '';
-  result: any = '';
+  result = '';
 
   constructor(private theme: ThemeService) {}
 
   ngOnInit() {}
 
-  // getAnswer() {
-  //   this.playSoundAnswer();
-  //   this.calculationString = this.mainText;
-  //   this.operand2 = parseFloat(this.mainText.split(this.operator)[1]);
-  //   if (this.operator === '/') {
-  //     this.subText = this.mainText;
-  //     this.mainText = (this.operand1 / this.operand2).toString();
-  //     this.subText = this.calculationString;
-  //     if (this.mainText.length > 9) {
-  //       this.mainText = this.mainText.substr(0, 9);
-  //     }
-  //   } else if (this.operator === '*') {
-  //     this.subText = this.mainText;
-  //     this.mainText = (this.operand1 * this.operand2).toString();
-  //     this.subText = this.calculationString;
-  //     if (this.mainText.length > 9) {
-  //       this.mainText = '';
-  //       this.subText = '';
-  //     }
-  //   } else if (this.operator === '-') {
-  //     this.subText = this.mainText;
-  //     this.mainText = (this.operand1 - this.operand2).toString();
-  //     this.subText = this.calculationString;
-  //   } else if (this.operator === '+') {
-  //     this.subText = this.mainText;
-  //     this.mainText = (this.operand1 + this.operand2).toString();
-  //     this.subText = this.calculationString;
-  //     if (this.mainText.length > 9) {
-  //       this.mainText = '';
-  //       this.subText = '';
-  //     }
-  //   } else {
-  //     this.subText = '';
-  //   }
-  //   this.answered = true;
-  // }
-
   reset() {
-    // this.mainText = '';
     this.input = '';
     this.result = '';
   }
 
   delete() {
-    if (this.mainText != '') {
-      this.mainText = this.mainText.substr(0, this.mainText.length - 1);
+    if (this.input != '') {
+      this.input = this.input.substr(0, this.input.length - 1);
     }
   }
-
-  // pressKey(key: any) {
-  //   this.playSound();
-  //   if (key === '/' || key === '*' || key === '-' || key === '+') {
-  //     const lastKey = this.mainText[this.mainText.length - 1];
-  //     if (
-  //       lastKey === '/' ||
-  //       lastKey === '*' ||
-  //       lastKey === '-' ||
-  //       lastKey === '+'
-  //     ) {
-  //       this.operatorSet = true;
-  //     }
-  //     if (this.operatorSet || this.mainText === '') {
-  //       return;
-  //     }
-  //     this.operand1 = parseFloat(this.mainText);
-  //     this.operator = key;
-  //     this.operatorSet = true;
-  //   }
-  //   if (this.mainText.length === 10) {
-  //     return;
-  //   }
-  //   this.mainText += key;
-  // }
-
   onToggle(input: any) {
     if (input === 'light') {
       this.theme.setLightTheme();
@@ -134,7 +59,6 @@ export class AppComponent implements OnInit {
         if (lastNum.lastIndexOf('.') >= 0) return;
       }
     }
-
     //Do Not Allow 0 at beginning.
     //Javascript will throw Octal literals are not allowed in strict mode.
     if (num == '0') {
@@ -180,7 +104,6 @@ export class AppComponent implements OnInit {
     ) {
       return;
     }
-
     this.input = this.input + op;
     this.calcAnswer();
   }

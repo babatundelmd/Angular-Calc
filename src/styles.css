@@ -78,15 +78,16 @@ body {
   justify-content: flex-end;
   padding: 25px;
 }
-
-.card-display .card-display-text {
+.card-display-text {
   align-self: center;
   font-size: 40px;
   color: var(--color-dark);
+  text-align: right;
 }
 
-.card-display .sub-display {
+.sub-display {
   color: var(--color-dark);
+  margin-bottom: -20px;
 }
 
 .card-keys-holder {
