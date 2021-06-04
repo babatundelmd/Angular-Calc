@@ -70,6 +70,7 @@ body {
 }
 .card-display {
   display: flex;
+  flex-direction: row;
   height: 130px;
   background: var(--screen-background);
   border-radius: 10px;
@@ -81,6 +82,10 @@ body {
 .card-display .card-display-text {
   align-self: center;
   font-size: 40px;
+  color: var(--color-dark);
+}
+
+.card-display .sub-display {
   color: var(--color-dark);
 }
 

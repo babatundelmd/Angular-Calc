@@ -12,12 +12,15 @@
 
     <div class="card-display">
       <div class="card-display-text">
-        {{ mainText }}
+        {{ result }}
+      </div>
+      <div class="sub-display">
+        {{ input }}
       </div>
     </div>
 
     <div class="card-keys-holder">
-      <button class="keys" (click)="pressKey(7)">7</button>
+      <button class="keys" (click)="pressKey('7')">7</button>
       <button class="keys" (click)="pressKey('8')">8</button>
       <button class="keys" (click)="pressKey('9')">9</button>
       <button class="keys specialkey" (click)="delete()">DEL</button>
