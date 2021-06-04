@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   operand2: any; // The second operand
   operator = ''; // The operator
   calculationString = '';
-  deleteString: any = '';
   // This is the string that denotes the operation being performed
   answered = false;
   // A flag to check whether the solution has been processed
@@ -62,7 +61,6 @@ export class AppComponent implements OnInit {
 
   reset() {
     this.mainText = '';
-    this.deleteString = '';
   }
 
   delete() {
