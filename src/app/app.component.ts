@@ -23,6 +23,8 @@ export class AppComponent implements OnInit {
     if (this.input != '') {
       this.input = this.input.substr(0, this.input.length - 1);
     }
+    // console.log(this.input);
+    // console.log(this.result);
   }
   onToggle(input: any) {
     if (input === 'light') {
@@ -82,7 +84,7 @@ export class AppComponent implements OnInit {
 
   getLastOperand() {
     let pos: number;
-    console.log(this.input);
+    // console.log(this.input);
     pos = this.input.toString().lastIndexOf('+');
     if (this.input.toString().lastIndexOf('-') > pos)
       pos = this.input.lastIndexOf('-');
@@ -90,7 +92,7 @@ export class AppComponent implements OnInit {
       pos = this.input.lastIndexOf('*');
     if (this.input.toString().lastIndexOf('/') > pos)
       pos = this.input.lastIndexOf('/');
-    console.log('Last ' + this.input.substr(pos + 1));
+    // console.log('Last ' + this.input.substr(pos + 1));
     return this.input.substr(pos + 1);
   }
 
@@ -122,9 +124,9 @@ export class AppComponent implements OnInit {
       lastKey === '+' ||
       lastKey === '.'
     ) {
-      formula = formula.substr(0, formula.length - 1);
+      formula = new String(formula.substr(0, formula.length - 1));
     }
-    this.result = eval(formula);
+    this.result = eval(formula.toString());
   }
 
   getAnswer() {
